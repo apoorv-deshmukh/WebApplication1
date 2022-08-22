@@ -5,12 +5,12 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Services
 {
-    public interface IRepo<T1, T2>
+    public interface IRepo<K,T>
     {
-        public Task<Customer> Add(Customer item);
-        public Task<ICollection<Customer>> GetAll();
-        public Task<Customer> GetT(int id);
-        public Task<Customer> Update(Customer item);
+        public Task<T> Add(T item);
+        public Task<T> Update(T item);
+        public Task<T> GetT(K id);
+        public Task<ICollection<T>> GetAll();
 
     }
 }
