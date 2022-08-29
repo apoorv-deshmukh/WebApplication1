@@ -7,7 +7,13 @@
 	<IsPackable>true</IsPackable>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<RepositoryUrl>https://github.com/apoorv-deshmukh/WebApplication1</RepositoryUrl>
+	<UserSecretsId>93396bcf-888e-4365-a791-af466a30e486</UserSecretsId>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+  </ItemGroup>
 
 
 
